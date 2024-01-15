@@ -1,0 +1,25 @@
+html {
+    display: block;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: rgb(217, 255, 227);
+    font-family: fantasy, sans-serif;
+    font-weight: normal;
+}
+
+.container {
+    display: flex;
+}
+.container article {
+    flex: 1;
+    margin: 0em 1em 0em;
+}
+
+.container article img {
+    width: 20em;
+    border-width: 5px;
+    border-style: double;
+    border-color: rgb(135, 135, 135);
+    display:block;
+    margin:auto;
+}
