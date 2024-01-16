@@ -2,6 +2,7 @@ html {
     box-sizing: border-box;
     display: block;
     box-sizing: border-box;
+    margin: 10px;
     scroll-behavior: smooth;
     background-color: rgb(217, 255, 227);
     font-family: fantasy, sans-serif;
@@ -9,22 +10,9 @@ html {
 }
 
 img {
-    width: 20em;
-}
-
-/* .container {
-    display: flex;
-}
-.container article {
-    flex: 1;
-    margin: 0em 1em 0em;
-}
-
-.container article img {
-    width: 20em;
-    border-width: 5px;
+    width: 17em;
+    display: block;
+    margin: auto;
     border-style: double;
-    border-color: rgb(135, 135, 135);
-    display:block;
-    margin:auto;
-} */
+    border-width: 5px;
+}
