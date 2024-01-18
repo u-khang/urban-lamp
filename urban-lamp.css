@@ -1,7 +1,6 @@
 html {
     box-sizing: border-box;
-    display: block;
-    box-sizing: border-box;
+    /* display: block; */
     margin: 10px;
     scroll-behavior: smooth;
     background-color: rgb(217, 255, 227);
@@ -15,4 +14,9 @@ img {
     margin: auto;
     border-style: double;
     border-width: 5px;
+}
+
+.navbar {
+    position: sticky;
+    top: 20px;
 }
