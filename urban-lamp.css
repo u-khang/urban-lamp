@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
     background-color: rgb(217, 255, 227);
@@ -17,23 +18,29 @@ ul, ol {
 /* TAB PANEL */
 .tab-panel {
     width: 452px;
-    height: 500px;
-    border: 1px solid forestgreen;
+    height: 300px;
+    margin: 10px 10px 0 0;
+    border: 2px solid forestgreen;
+    float: right;
 }
 
 /* tabs style */
 .tabs {
     display: flex;
     height: 40px;
+    align-items: stretch;
+    border-bottom: 2px solid forestgreen;
 }
 
 .tabs li {
     flex: 1 1 auto;
     text-align: center;
+    line-height: 40px;
+    font-weight: 600;
 }
 
 .tabs li:hover {
-    background-color: blueviolet;
+    background-color: darkolivegreen;
 }
 
 .active-tab {
@@ -43,16 +50,21 @@ ul, ol {
 /* panels style */
 .panels {
     width: 100%;
-    height: 458px;
+    height: 256px;
     position: relative;
 }
 
 .panels article {
     width: 100%;
-    height: 458px;
-    /* border: 2px double yellowgreen; */
+    height: 256px;
+    padding: 20px;
     background-color: forestgreen;
     position: absolute;
+    overflow: scroll
+}
+
+.panels img {
+    width: 100%;
 }
 
 .panels .active-panel {

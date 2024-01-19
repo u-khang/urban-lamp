@@ -3,44 +3,21 @@ var panels = document.querySelectorAll(".panels article");
 
 for (i = 0; i < tabs.length; i++) {
     let tab = tabs[i];
-    tab[i].onclick = selectTab(tab, i);
-}
+    let panel = panels[i];
+    
+    function selectTab() {
+    
+        for (i = 0; i < tabs.length; i++) {
+            tabs[i].className = "";
+            panels[i].className = "";
+        }
 
-function selectTab(tab, tabPos) {
-    let panel = panels[tabPos];
-
-    for (i = 0; i < tabs.length; i++) {
-        tabs[i].className = "";
+        tab.className = "active-tab";
+        panel.className = "active-panel";
+    
+        console.log(selectTab);
     }
-    tab.className = "active-tab";
-    for (i = 0; i < panels.length; i++) {
-        panels[i].className = "";
-    }
-    panel.className = "active-panel";
+
+    tab.addEventListener("click", selectTab);
+    
 }
-
-
-
-    // var tabs = document.querySelectorAll(".tab-panel li");
-    //   var panels = document.querySelectorAll(".tab-panel article");
-
-    //   for (i = 0; i < tabs.length; i++) {
-    //     var tab = tabs[i];
-    //     setTabHandler(tab, i);
-    //   }
-
-    //   function setTabHandler(tab, tabPos) {
-    //     tab.onclick = function () {
-    //       for (i = 0; i < tabs.length; i++) {
-    //         tabs[i].className = "";
-    //       }
-
-    //       tab.className = "active-tab";
-
-    //       for (i = 0; i < panels.length; i++) {
-    //         panels[i].className = "";
-    //       }
-
-    //       panels[tabPos].className = "active-panel";
-    //     };
-    //   }
