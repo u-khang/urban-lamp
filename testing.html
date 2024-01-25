@@ -12,19 +12,34 @@
         }
 
         html {
-            border: 5px solid rebeccapurple;
-            color: cornflowerblue
         }
 
         p {
-            color: initial;
+            border: 2px cornflowerblue solid;
+            flex: 1 0 auto;
+        }
+        .container {
+            border: 5px solid rebeccapurple;
+            display: flex;
+            resize: both;
+            overflow: scroll;
+            flex-direction: column;
+        }
+        .two {
+            width: 300px;
         }
     </style>
 </head>
 <body>
-    <div>
+    <div class="container">
         <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab iure autem quos numquam maxime? Optio soluta facere velit id ex laudantium. Repellendus ipsa minus dicta. Doloribus harum quasi hic suscipit!
+        </p>
+        <p class="two">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi vitae, iusto saepe deserunt, est laboriosam quasi harum voluptate veniam quod quidem omnis aperiam dignissimos, at reprehenderit repellat reiciendis possimus placeat?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nihil aliquam dolorem totam non accusantium in voluptatem? Ullam, ad sapiente libero laudantium sunt vitae repudiandae odio modi, numquam unde eveniet!
         </p>
     </div>
 </body>

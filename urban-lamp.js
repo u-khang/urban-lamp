@@ -19,5 +19,5 @@ for (i = 0; i < tabs.length; i++) {
     }
 
     tab.addEventListener("click", selectTab);
-    
+
 }
